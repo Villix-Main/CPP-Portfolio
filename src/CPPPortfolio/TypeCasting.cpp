@@ -4,32 +4,39 @@
 class PersonBase
 {
 public:
-	PersonBase() { }
-	virtual ~PersonBase() { }    
+	PersonBase()
+	{
+	}
+	virtual ~PersonBase()
+	{
+	}
 };
 
 
 class Person : public PersonBase
 {
 public:
-	Person() { }
+	Person()
+	{
+	}
 };
 
 class SpecialPerson : public PersonBase
 {
 public:
-	SpecialPerson() { }
+	SpecialPerson()
+	{
+	}
 };
 
 void RunCastFile()
 {
 	// Type Punning 
 	/*Person person{ 20, 15 };
-	
-	int* mPosition = (int*)&person;
-	
-	int age = *(int*)((char*)&person + 4);;
 
+	int* mPosition = (int*)&person;
+
+	int age = *(int*)((char*)&person + 4);;
 	std::cout << mPosition[0] << std::endl;
 	std::cout << age << std::endl;*/
 
@@ -37,10 +44,10 @@ void RunCastFile()
 	double value = 10.15;
 	double cValue = static_cast<int>(value) + 5.50;
 
-	
+
 	Person* person = new Person();
 	PersonBase* base = person;
-	SpecialPerson* sPerson = new SpecialPerson();   
+	SpecialPerson* sPerson = new SpecialPerson();
 
 	//SpecialPerson* sp = dynamic_cast<SpecialPerson*>(sPerson);
 	SpecialPerson* sp = dynamic_cast<SpecialPerson*>(base); // This will be NULL as base is not a instance of SpecialPerson class
@@ -52,5 +59,5 @@ void RunCastFile()
 	}
 
 
-	std::cin.get(); 
+	std::cin.get();
 }
