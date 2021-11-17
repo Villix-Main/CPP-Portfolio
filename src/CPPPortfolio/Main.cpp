@@ -7,14 +7,17 @@
 
 // Main source files run functions
 //void RunCastFile();
-void RunMoveSemanticsFile(); 
-
+//void RunMoveSemanticsFile(); 
+//void RunLambdaExpressionsFile();
+void RunSTLFile();
 
 
 int main()
 {
 	//RunCastFile();
-	RunMoveSemanticsFile();
+	//RunMoveSemanticsFile();
+	//RunLambdaExpressionsFile();
+	RunSTLFile();
 
 	std::cin.get(); 
 
