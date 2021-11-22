@@ -144,6 +144,7 @@
     <ClCompile Include="MoveSemantics.cpp" />
     <ClCompile Include="STL.cpp" />
     <ClCompile Include="TypeCasting.cpp" />
+    <ClCompile Include="Unions.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
