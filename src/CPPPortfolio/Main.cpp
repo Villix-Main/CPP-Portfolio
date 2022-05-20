@@ -10,7 +10,8 @@
 //void RunMoveSemanticsFile(); 
 //void RunLambdaExpressionsFile();
 //void RunSTLFile();
-void RunUnionsFile();
+//void RunUnionsFile();
+void RunMapFile();
 
 int main()
 {
@@ -18,7 +19,8 @@ int main()
 	//RunMoveSemanticsFile();
 	//RunLambdaExpressionsFile();
 	//RunSTLFile();
-	RunUnionsFile();
+	/*RunUnionsFile();*/
+	RunMapFile();
 
 	std::cin.get(); 
 

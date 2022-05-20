@@ -14,7 +14,7 @@ private:
 	size_t health = 0;
 
 public:
-	Enemy(std::string name, int health = 0)
+	Enemy(std::string name, size_t health = 0)
 		: name{ name }, health{ health } {}
 
 	bool operator<(const Enemy& other) const // const keyword means that no current class members can be modified
@@ -33,7 +33,10 @@ public:
 // Function Templates 
 // class is 'alias' to typename
 template <typename T> 
-T Add(T a, T b) { return a + b }
+T Add(T a, T b)
+{
+	return a + b;
+}
 
 
 
